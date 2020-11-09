@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'faker'
+movies = Category.create(name: 'Movies')
+movies.posts.create(title: Faker::Movie.title)
+movies.posts.create(title: Faker::Movie.title)
+movies.posts.create(title: Faker::Movie.title)
+games = Category.create(name: 'Games')
+games.posts.create(title: Faker::Game.title)
+games.posts.create(title: Faker::Game.title)
+games.posts.create(title: Faker::Game.title)
